@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <nav><section class="banner1">
+        <div class="navbar">
+            <div id="size"><a id="cl"href="home.html"><i class="fa-solid fa-utensils"></i>&ensp;AmritaBhojNalaya</i></a></div>
+           <ul>
+               <li><a href="home.html"><i class="fa-solid fa-house"></i>&ensp;Home</a></li>
+               <li><a href="service.html"><i class="fa-solid fa-bell-concierge"></i>&ensp;service</a></li>
+               <li><a href="menu.html"><i class="fa-solid fa-list"></i>&ensp;menu</a>&ensp;</li>
+               <li><a href="contact.html"><i class="fa-solid fa-phone"></i>&ensp;contact</a></li>
+               <li><a href="booktable.html"><i class="fa-solid fa-box"></i>&ensp;book table</a></li>
+               <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>&ensp;Cart</a></li>
+               <li><a href="login.html" ><i class="fa-solid fa-arrow-right-to-bracket"></i>&ensp;<span class="">login/signup</span></a></li>
+           </ul>
+        </div>
+        <div class="container">
+           <div class="he"><h1>Connect With Us</h1>
+            <p>We would love to respond to your queries.<br> Feel free
+            to get in touch with us.</p>
+        </div> 
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h3 >Send your request</h3>
+                    <form onsubmit="sendEmail()"  action="Thank.html">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="John Amendo" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder="+91 1234567890" required>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="text" placeholder="example@gmail.com" id="email" required>
+                            </div>
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input type="text" placeholder="Sub" required>
+                            </div>
+                        </div>
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="contact-right">
+                    <h3>Reach Us</h3>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>contactus@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>+91 1234567890</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>#212, Ground floor, 7th cross<br>
+                            Some layout, Some Road, Koromangla<br>
+                            Bengaluru 560001
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+   </div>
+   </section>
+   <script>
+    function sendEmail()
+    {
+        alert("Successfully sent");
+    }
+   </script>
+    
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amrita</title>
+    <link rel="icon" href="./img/restaurant (1).png" type="image/icon type">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <nav><section class="banner1">
+         <div class="navbar">
+            <div id="size"><a id="cl"href="home.html"><i class="fa-solid fa-utensils"></i>&ensp;AmritaBhojNalaya</i></a></div>
+            <ul>
+                <li><a href="home.html"><i class="fa-solid fa-house"></i>&ensp;Home</a></li>
+                <li><a href="service.html"><i class="fa-solid fa-bell-concierge"></i>&ensp;service</a></li>
+                <li><a href="menu.html"><i class="fa-solid fa-list"></i>&ensp;menu</a>&ensp;</li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone"></i>&ensp;contact</a></li>
+                <li><a href="booktable.html"><i class="fa-solid fa-box"></i>&ensp;book table</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>&ensp;Cart</a></li>
+                <li><a href="login.html" ><i class="fa-solid fa-arrow-right-to-bracket"></i>&ensp;<span class="">login/signup</span></a></li>
+            </ul>
+         </div>
+         <div class="row">
+            <div class="row2">
+                <div class="text-box" >
+                 <h1>Enjoy Our
+                Delicious Meal</h1><br><br>
+                <p class="hide">Welcome To AmritaBhojNalaya Restaurant.<br>Here we serve our customers with Nothing but Top Quality Food &<br>Facilities such as Door to Door delivery, Walk-ins & Drive-ins.</p>
+                    <div class="sub" style="text-decoration: none;"><a href="order.html" class="ls"><i class="fa-solid fa-truck"></i>&ensp;Order Now</a></div>
+
+                </div>
+           </div>
+           <div class="row2">
+            <img src="./img/hero.png" width="71%"  class="rotate">
+
+           </div>
+    </div>
+    </section>
+</nav>
+
+    <section class="course">
+        <h1></h1>
+        <div class="row">
+            <div class="row1">
+                <div class="sym"><i class="fa-solid fa-cart-shopping"></i></div>
+                <h3>Online order</h3>
+                <p>Having More time to browse the menu. 
+                    Easier to place large orders. 
+                </p>
+            </div>
+            <div class="row1">
+                <div class="sym"><i class="fa-solid fa-utensils"></i></div>
+                <h3>Quality food</h3>
+                <p>Having Fresh ingredients. 
+                    Following standard recipes. 
+                    Finding the ideal supplier for every individual ingredients.</p>
+            </div>
+            <div class="row1">
+                <div class="sym"><i class="fa-solid fa-person"></i></div>
+                <h3>Master Chefs</h3>
+                <p>Having Professional Chefs well versed with both Indian and Foreign Cusines.</p>
+            </div>
+            <div class="row1">
+                <div class="sym"><i class="fa-solid fa-headset"></i></div>
+                <h3>24/7</h3>
+                <p>Facilites are available at any time. 
+                    Contact us at any time to order something.</p>
+            </div>
+        </div>
+        <h3>Developed by</h3>
+        <div class="row">
+            <div class="row1">
+                <img src="./img/me.jpeg" class="im" width="100%">
+                <br><br><br> P Vamshidhar Reddy
+            </div>
+            <div class="row1">
+                <img src="./img/mayank.jpeg" class="im" width="70%">
+                <br><br><br>Mayank Kandari
+            </div>
+            <div class="row1">
+                <img src="./img/charan.jpeg" class="im" width="100%">
+                <br><br><br>D Charan Teja
+            </div>
+            <div class="row1">
+                <img src="./img/swaropp.jpeg" class="im" width="100%" >
+                <br><br><br>Swaroop Haridas
+            </div>
+        </div>
+        
+
+    </section>
+    <footer >
+        <div class="footer">
+            <div class="col-1">
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="order.html">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <h3 style="color: #fca414;" >NEWSLETTER</h3>
+                <form>
+                    <input type="email" placeholder="Enter Email Address" required>
+                    <br>
+                    <button type="" style="border: 2px soild #fff;" onclick="sendEmail()">SUBSCRIBE NOW</button>
+                </form><br>
+               <p>&#169; All Right Reserved. Designed By VCMS</p> 
+            </div>
+            <div class="col-3">
+                <h3 style="color: #fca414;">CONTACT</h3>
+                <p>123,XYZ Road<br>Hyderabad, Telanagana, India</p><br>
+                <div class="social"><i class="fa-brands fa-instagram"></i>&ensp;<i class="fa-brands fa-facebook"></i>&ensp;<i class="fa-brands fa-twitter"></i></div>
+            </div>
+        </div>
+
+    </footer>
+    <script src=
+    "https://smtpjs.com/v3/smtp.js">
+  </script>
+ 
+  <script type="text/javascript">
+    function sendEmail() {
+      Email.send({
+        Host: "smtp.gmail.com",
+        Username: "sender@email_address.com",
+        Password: "Enter your password",
+        To: 'vinnup113@gmail.com',
+        From: "sender@email_address.com",
+        Subject: "Sending Email using javascript",
+        Body: "Well that was easy!!",
+      })
+        .then(function (message) {
+          alert("mail sent successfully")
+        });
+    }
+  </script>
+    
+</body>
+</html>
